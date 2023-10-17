@@ -1,2 +1,7 @@
 RewriteEngine On
-RewriteRule ^(.*)$ https://mrsinom.github.io/DrewDom/index.html [R=301,L]
+RewriteRule ^(.*)$ www.drewdom.org.pl [R=301,L]
+
+
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301] 
