@@ -1,1 +1,2 @@
-
+RewriteEngine On
+RewriteRule ^(.*)$ https://www.nowyadresdomeny.pl/$1 [R=301,L]
