@@ -1,2 +1,2 @@
 RewriteEngine On
-RewriteRule ^(.*)$ https://www.nowyadresdomeny.pl/$1 [R=301,L]
+RewriteRule ^(.*)$ https://mrsinom.github.io/DrewDom/index.html [R=301,L]
