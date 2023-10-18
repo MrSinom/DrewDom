@@ -1,7 +1,10 @@
-RewriteEngine On
-RewriteRule ^(.*)$ www.drewdom.org.pl [R=301,L]
+
 
 
 RewriteEngine On
 RewriteCond %{HTTPS} !=on 
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule (.*) https://drewdom.org.pl/l[R=301,L]
